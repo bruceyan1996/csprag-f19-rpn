@@ -8,7 +8,7 @@ operators = {
     '-': operator.sub,
     '*': operator.mul,
     '/': operator.truediv,
-    '^': operator.carat,
+    '^': operator.carat
 }
 
 def calculate(myarg):
