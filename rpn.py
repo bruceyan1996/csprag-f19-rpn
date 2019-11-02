@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
-
+import readline
 import operator
+import colorama 
+from colorama import Fore
+
+colorama.init(autoreset=True)
+
 
 
 operators = {
@@ -31,7 +36,11 @@ def calculate(myarg):
 def main():
     while True:
         result = calculate(input("rpn calc> "))
-        print("Result: ", result)
-
+        if result >= 30:
+            print(Fore.RED + "Result: ", result)
+        elif result >= 20:
+            print(Fore.GREEN + "Result: ", result)
+        else:
+            print(Fore.YELLOW +"Result: ", result)  
 if __name__ == '__main__':
     main()

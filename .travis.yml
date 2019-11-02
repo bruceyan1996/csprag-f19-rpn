@@ -2,4 +2,7 @@ language: python
 python:
  - "3.5"
 script:
- - pytest
+ - coverage run -m unittest
+
+after success:
+-coveralls 
