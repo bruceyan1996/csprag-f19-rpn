@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import readline
 import operator
-import colorama 
+mport colorama 
 from colorama import Fore
 
 colorama.init(autoreset=True)
